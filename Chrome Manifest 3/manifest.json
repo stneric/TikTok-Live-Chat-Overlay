@@ -1,0 +1,25 @@
+{
+ "manifest_version": 3,
+ "name": "TikTok Live Chat Overlay",
+ "version": "1.0",
+ "description": "Displays only the chat for TikTok Live while keeping the stream running in the background.",
+ "permissions": ["activeTab", "tabs", "scripting"],
+ "background": {
+  "service_worker": "background.js"
+ },
+ "action": {
+  "default_title": "Toggle Chat Overlay"
+ },
+ "content_scripts": [
+  {
+   "matches": ["*://www.tiktok.com/@*/live*"],
+   "js": ["content.js"],
+   "run_at": "document_idle"
+  }
+ ],
+ "browser_specific_settings": {
+     "gecko": {
+         "id": "tiktok-chat-overlay@example.com"
+     }
+ }
+}

@@ -15,5 +15,7 @@ Manual installation can be done by either
 
 Then open Firefox -> Extensions menu -> manage extensions -> Install addon from file -> select the zip
 
+Also works in Google Chrome and chrome adjecent browsers. To use in chrome, clone the repo, enable developer options in chrome's extension settings -> load unpacked extension -> select the Chrome Manifest 3 Folder -> done
+
 
 This extension may have some bugs.
